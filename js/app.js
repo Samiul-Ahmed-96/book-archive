@@ -8,7 +8,7 @@ const loadBooks = () =>{
     totalItem.innerText = '';
     //clear search field value
     searchField.value = '';
-    const url = `http://openlibrary.org/search.json?q=${searchText}`;
+    const url = `https://openlibrary.org/search.json?q=${searchText}`;
     //error handle
     if(searchText === ""){
         error.innerText = 'search field cannot be empty';
@@ -36,8 +36,6 @@ const getBooks = (books) =>{
     
     const booksArray = books;
     const bookLength = books.length;
-    console.log(bookLength)
-
     totalItem.innerText ='Total Item Found : '+bookLength;
     const booksContainer = document.getElementById('books-container');
     //Clear the container

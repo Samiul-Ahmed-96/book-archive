@@ -1,0 +1,40 @@
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    #books-container {
+        grid-template-columns: auto auto auto auto;
+    }
+    .book-details img {
+        width: 250px;
+        height: 300px;
+    }
+
+}
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    #books-container {
+        grid-template-columns: auto auto auto;
+    }
+
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    #books-container {
+        grid-template-columns: auto auto;
+    }
+
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+
+    #books-container {
+        grid-template-columns: auto;
+    }
+    .book-details img {
+        width: 100%;
+        height: auto;
+    }
+}
+
